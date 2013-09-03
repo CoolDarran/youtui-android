@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_sms_invite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_sms_invite" />
+
+    <Button
+        android:id="@+id/btn_mail_invite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_mail_invite" />
+
+    <Button
+        android:id="@+id/btn_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_recommend" />
+
+    <Button
+        android:id="@+id/btn_qrcode_invite"
+        style="android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_qrcode_invite" />
+
+    <ImageView
+        android:id="@+id/img_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" 
+        android:layout_gravity="center" />
+
+</LinearLayout>

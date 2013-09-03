@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/weibo_share_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/weibo_top_bar"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_title_Recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/weibo_share_top_bar"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/weibo_editor_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/weibo_share_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/weibo_editor_panel_first_half"
+            android:gravity="top|left"
+            android:hint="@string/weio_editor_hint"
+            android:minHeight="50dp"
+            android:paddingLeft="2dp"
+            android:paddingTop="2dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/weibo_editor_panel_sec_half" >
+
+            <ImageView
+                android:id="@+id/weibo_share_pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@null"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/weibo_share_text_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/weibo_share_pic"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="2dp"
+                android:text="0/140"
+                android:textColor="#919191" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/weibo_share_pic"
+                android:layout_alignLeft="@+id/weibo_share_text_count"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="-10dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/weibo_share_button_mention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@drawable/weibo_button_mention"
+                    android:contentDescription="@null" />
+
+                <ImageButton
+                    android:id="@+id/weibo_share_button_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/weibo_button_topic"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_weibo_share"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/weibo_button_share"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/btn_share"
+        android:textColor="#535353" />
+
+</LinearLayout>
